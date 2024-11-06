@@ -22,7 +22,7 @@ spec:
       - name: nodejs-container
         image: 325636060535.dkr.ecr.ca-central-1.amazonaws.com/devops_python:v1  # Replace with your Node.js app image
         ports:
-        - containerPort: 4000  # Change this if your app listens on a different port
+        - containerPort: 3000  # Change this if your app listens on a different port
           
 # ---
 # apiVersion: v1
