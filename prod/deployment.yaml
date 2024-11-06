@@ -19,7 +19,7 @@ spec:
       imagePullSecrets:
       - name: aws-ecr-secret
       containers:
-      - name: nodejs-container
+      - name: pythonapp
         image: 325636060535.dkr.ecr.ca-central-1.amazonaws.com/devops_python:v1  # Replace with your Node.js app image
         ports:
         - containerPort: 3000  # Change this if your app listens on a different port
