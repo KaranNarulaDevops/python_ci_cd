@@ -2,25 +2,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-app
-  namespace: nodejsapp
+  name: pythonapp
+  namespace: pythonapp
   labels:
-    app: nodejs-app
+    app: pythonapp
 spec:
   replicas: 4  # Number of pod replicas
   selector:
     matchLabels:
-      app: nodejs-app
+      app: pythonapp
   template:
     metadata:
       labels:
-        app: nodejs-app
+        app: pythonapp
     spec:
       imagePullSecrets:
       - name: aws-ecr-secret
       containers:
       - name: nodejs-container
-        image: 325636060535.dkr.ecr.ca-central-1.amazonaws.com/devops_1:v3  # Replace with your Node.js app image
+        image: 325636060535.dkr.ecr.ca-central-1.amazonaws.com/devops_python:v1  # Replace with your Node.js app image
         ports:
         - containerPort: 4000  # Change this if your app listens on a different port
           
