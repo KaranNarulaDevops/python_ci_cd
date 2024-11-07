@@ -9,7 +9,7 @@ metadata:
 spec:
   selector:
     app: eks-sample-linux-deployment
-  type: ClusterIP  # Use ClusterIP for internal access, NodePort for fixed ports, LoadBalancer for external access
+  type: LoadBalancer  # Use ClusterIP for internal access, NodePort for fixed ports, LoadBalancer for external access
   ports:
   - port: 80            # External port
     targetPort: 80    # Port on the container where the app listens
