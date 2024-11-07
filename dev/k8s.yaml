@@ -26,10 +26,10 @@ spec:
                 - arm64
       containers:
       - name: nginx
-        image: public.ecr.aws/nginx/ngin:1.23
+        image: public.ecr.aws/nginx/nginx:1.23
         ports:
         - name: http
-          containerPort: 80
+          containerPort: 8000
         imagePullPolicy: IfNotPresent
       nodeSelector:
         kubernetes.io/os: linux
