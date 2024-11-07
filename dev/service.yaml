@@ -5,7 +5,7 @@ metadata:
   name: eks-sample-linux-deployment-service
   namespace: devapp  # Replace with your actual namespace
   labels:
-    app: eks-sample-linux-deployment
+    app: eks-sample-linux-deploymen
 spec:
   selector:
     app: eks-sample-linux-deploymen
