@@ -5,10 +5,10 @@ metadata:
   name: eks-sample-linux-deployment-service
   namespace: devapp  # Replace with your actual namespace
   labels:
-    app: eks-sample-linux-deploymen
+    app: eks-sample-linux-deployment
 spec:
   selector:
-    app: eks-sample-linux-deploymen
+    app: eks-sample-linux-deployment
   type: ClusterIP  # Use ClusterIP for internal access, NodePort for fixed ports, LoadBalancer for external access
   ports:
   - port: 80            # External port
